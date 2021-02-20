@@ -1,8 +1,19 @@
 .huddle__main_together {
     text-align: center;
+    display: flex;
+    flex-direction: column-reverse;
 }
 
 .huddle__main_together_header {
     font-size: 32px;
     text-transform: capitalize;
+}
+
+@media (min-width: 600px) {
+    .huddle__main_together {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-column-gap: 32px;
+        column-gap: 32px;
+    }
 }
