@@ -60,16 +60,11 @@ button {
   margin-block-start: 32px; }
 
 @media (min-width: 600px) {
-  .huddle__main {
-    max-width: 1000px;
-    margin-inline-start: auto;
-    margin-inline-end: auto; }
   .huddle__main_header {
     font-size: 32px; } }
 
 .huddle__main_information {
-  margin-block-start: 48px;
-  padding: 32px; }
+  margin-block-start: 48px; }
 
 .huddle__main_iformation_communication {
   padding-block: 32px; }
@@ -103,8 +98,19 @@ button {
 
 .huddle__main_together {
   text-align: center;
+  background-image: url("../images/bg-section-top-mobile-1.svg"), url("../images/bg-section-top-mobile-2.svg"), url("../images/bg-section-bottom-mobile-1.svg"), url("../images/bg-section-bottom-mobile-2.svg");
+  background-position: top left, top right, bottom left, bottom right;
+  background-repeat: no-repeat;
+  background-size: 100% 7%, 100% 8%, 100% 8%, 100% 15%;
+  display: block;
+  padding-top: 46px;
+  padding-bottom: 46px; }
+
+.huddle__main_together_container {
+  padding: 48px;
   display: flex;
-  flex-direction: column-reverse; }
+  flex-direction: column-reverse;
+  background-color: #F6FBFF; }
 
 .huddle__main_together_header {
   font-size: 32px;
@@ -112,14 +118,23 @@ button {
 
 @media (min-width: 600px) {
   .huddle__main_together {
+    padding-top: 35px;
+    padding-bottom: 35px;
+    text-align: start; }
+  .huddle__main_together_container {
+    padding: 80px; }
+  .huddle__main_together_container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-column-gap: 32px;
     column-gap: 32px; } }
 
 .huddle__main_conversations {
-  margin-block-start: 48px;
+  margin-block-start: 80px;
   text-align: center; }
+
+.huddle__main_conversations_container {
+  padding: 48px; }
 
 .huddle__main_conversations_heading {
   margin-block-start: 32px;
@@ -127,6 +142,9 @@ button {
 
 @media (min-width: 600px) {
   .huddle__main_conversations {
+    text-align: start; }
+  .huddle__main_conversations_container {
+    padding: 80px;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-column-gap: 32px;
@@ -135,8 +153,19 @@ button {
 .huddle__main_users {
   margin-block-start: 48px;
   text-align: center;
+  background-image: url("../images/bg-section-top-mobile-1.svg"), url("../images/bg-section-top-mobile-2.svg"), url("../images/bg-section-bottom-mobile-1.svg"), url("../images/bg-section-bottom-mobile-2.svg");
+  background-position: top left, top right, bottom left, bottom right;
+  background-repeat: no-repeat;
+  background-size: 100% 7%, 100% 8%, 100% 8%, 100% 15%;
+  display: block;
+  padding-top: 46px;
+  padding-bottom: 46px; }
+
+.huddle__main_users_container {
   display: flex;
-  flex-direction: column-reverse; }
+  flex-direction: column-reverse;
+  background-color: #F6FBFF;
+  padding: 48px; }
 
 .huddle__main_users_header {
   margin-block-start: 32px;
@@ -144,10 +173,15 @@ button {
 
 @media (min-width: 600px) {
   .huddle__main_users {
+    padding-top: 35px;
+    padding-bottom: 35px;
+    text-align: start; }
+  .huddle__main_users_container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-column-gap: 32px;
-    column-gap: 32px; } }
+    column-gap: 32px;
+    padding: 80px; } }
 
 .huddle__main_building {
   padding: 48px;

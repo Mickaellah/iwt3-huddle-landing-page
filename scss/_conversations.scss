@@ -1,6 +1,10 @@
 .huddle__main_conversations {
-    margin-block-start: 48px;
+    margin-block-start: 80px;
     text-align: center;
+}
+
+.huddle__main_conversations_container {
+    padding: 48px;
 }
 
 .huddle__main_conversations_heading {
@@ -9,7 +13,12 @@
 }
 
 @media (min-width: 600px) {
-    .huddle__main_conversations {
+    .huddle__main_conversations{
+        text-align: start;
+    }
+
+    .huddle__main_conversations_container {
+        padding: 80px;
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         grid-column-gap: 32px;

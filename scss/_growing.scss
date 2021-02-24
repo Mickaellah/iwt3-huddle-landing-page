@@ -1,7 +1,19 @@
 .huddle__main_together {
     text-align: center;
+    background-image: url('../images/bg-section-top-mobile-1.svg'), url('../images/bg-section-top-mobile-2.svg'), url('../images/bg-section-bottom-mobile-1.svg'), url('../images/bg-section-bottom-mobile-2.svg');
+    background-position: top left, top right, bottom left, bottom right;
+    background-repeat: no-repeat;
+    background-size: 100% 7%, 100% 8%, 100% 8%, 100% 15%;
+    display: block;
+    padding-top: 46px;
+    padding-bottom: 46px;
+}
+
+.huddle__main_together_container {
+    padding: 48px;
     display: flex;
     flex-direction: column-reverse;
+    background-color: #F6FBFF;
 }
 
 .huddle__main_together_header {
@@ -11,6 +23,16 @@
 
 @media (min-width: 600px) {
     .huddle__main_together {
+        padding-top: 35px;
+        padding-bottom: 35px;
+        text-align: start;
+    }
+
+    .huddle__main_together_container  {
+        padding: 80px;
+    }
+    
+    .huddle__main_together_container {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         grid-column-gap: 32px;
