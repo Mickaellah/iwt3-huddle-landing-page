@@ -166,10 +166,10 @@ button {
   text-transform: capitalize; }
 
 .huddle__footer {
-  padding-top: 100px;
+  padding-top: 142px;
   color: white;
   background-image: url("../images/bg-footer-top-mobile.svg");
-  background-size: 102% 6%;
+  background-size: 102% 10%;
   background-repeat: no-repeat;
   background-position-y: 44px;
   display: block; }
@@ -219,6 +219,9 @@ button {
 .huddle__footer_contact_content {
   margin-block-start: 32px; }
 
+.huddle__footer_newsletter_header {
+  text-transform: uppercase; }
+
 .huddle__footer_contact_form {
   display: flex;
   flex-direction: column;
@@ -258,14 +261,21 @@ button {
 
 @media all and (min-width: 600px) {
   .huddle__footer {
-    padding-top: 76px; }
+    padding-top: 118px; }
+  .huddle__footer_container > * {
+    max-width: 1000px;
+    margin-inline-start: auto;
+    margin-inline-end: auto; }
+  .huddle__footer_container {
+    padding-top: 80px; }
   .huddle__footer_article {
     display: flex;
     flex-direction: row-reverse;
     justify-content: space-between; }
   .huddle__footer_newsletter {
-    margin-inline-start: 64px; }
+    margin-inline-start: 64px;
+    margin-block-start: 64px; }
   .huddle__footer_newsletter_input {
-    width: 83.5%; }
+    width: 85%; }
   .huddle__footer_newsletter_button {
     margin-inline-start: 50%; } }
