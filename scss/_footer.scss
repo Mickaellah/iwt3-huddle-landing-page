@@ -1,10 +1,16 @@
 .huddle__footer {
-    // padding: 32px;
+    padding-top: 100px;
     color: white;
-    // background-image: url('../images/bg-footer-top-mobile.svg');
-    // background-position: 30% 50%;
-    // background-repeat: no-repeat;
-    // background-size: cover;
+    background-image: url('../images/bg-footer-top-mobile.svg');
+    background-size: 102% 6%;
+    background-repeat: no-repeat;
+    background-position-y: 44px;
+    display: block;
+}
+
+.huddle__footer_container {
+    background-color: #00252e;
+    padding: 20px;
 }
 
 .huddle__footer_background {
@@ -30,7 +36,7 @@
     padding-inline: 32px;
     border-radius: 5px;
     border: none;
-    width: 89%;
+    width: 86%;
 }
 
 .huddle__footer_newsletter_button {
@@ -101,13 +107,17 @@
 }
 
 @media all and (min-width: 600px) {
+    .huddle__footer {
+        padding-top: 76px;
+    }
+
     .huddle__footer > * {
-        max-width: 1000px;
-        margin-inline-start: auto;
-        margin-inline-end: auto;
+        // max-width: 1000px;
+        // margin-inline-start: auto;
+        // margin-inline-end: auto;
     } 
 
-    .huddle__footer_container {
+    .huddle__footer_article {
         display: flex;
         flex-direction: row-reverse;
         justify-content: space-between;
@@ -115,5 +125,13 @@
 
     .huddle__footer_newsletter {
         margin-inline-start: 64px;
+    }
+
+    .huddle__footer_newsletter_input {
+        width: 83.5%;
+    }
+
+    .huddle__footer_newsletter_button {
+        margin-inline-start: 50%;
     }
 }
