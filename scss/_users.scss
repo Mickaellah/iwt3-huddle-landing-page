@@ -1,13 +1,15 @@
 .huddle__main_users {
     margin-block-start: 48px;
     text-align: center;
-    background-image: url('../images/bg-section-top-mobile-1.svg'), url('../images/bg-section-top-mobile-2.svg'), url('../images/bg-section-bottom-mobile-1.svg'), url('../images/bg-section-bottom-mobile-2.svg');
-    background-position: top left, top right, bottom left, bottom right;
-    background-repeat: no-repeat;
-    background-size: 100% 7%, 100% 8%, 100% 8%, 100% 15%;
+    background-image: url('../images/bg-section-top-desktop-2.svg'),
+    url('../images/bg-section-bottom-desktop-2.svg');
+    background-repeat: no-repeat, no-repeat;
+    background-size: 100%, 100%;
+    background-position-y: 0%, 100%;
     display: block;
-    padding-top: 46px;
-    padding-bottom: 46px;
+    text-align: center;
+    padding-top: 10%;
+    padding-bottom: 8%;
 }
 
 .huddle__main_users_container {
@@ -24,8 +26,6 @@
 
 @media (min-width: 600px) {
     .huddle__main_users {
-        padding-top: 35px;
-        padding-bottom: 35px;
         text-align: start;
     }
 
