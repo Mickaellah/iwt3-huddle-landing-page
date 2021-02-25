@@ -61,7 +61,10 @@ button {
 
 @media (min-width: 600px) {
   .huddle__main_header {
-    font-size: 32px; } }
+    font-size: 32px; }
+  .huddle__main_heading,
+  .huddle__main_details {
+    padding-inline: 80px; } }
 
 .huddle__main_information {
   margin-block-start: 48px; }
@@ -86,6 +89,8 @@ button {
   color: grey; }
 
 @media (min-width: 600px) {
+  .huddle__main_iformation_communication {
+    padding: 80px; }
   .huddle__main_information_navigation_container {
     display: flex;
     flex-direction: row;
@@ -231,8 +236,7 @@ button {
   padding-block: 16px;
   padding-inline: 32px;
   border-radius: 5px;
-  border: none;
-  width: 86%; }
+  border: none; }
 
 .huddle__footer_newsletter_button {
   margin-block-start: 32px;
@@ -297,7 +301,7 @@ button {
   .huddle__footer {
     padding-top: 118px; }
   .huddle__footer_container > * {
-    max-width: 1000px;
+    max-width: 1200px;
     margin-inline-start: auto;
     margin-inline-end: auto; }
   .huddle__footer_container {
@@ -309,7 +313,19 @@ button {
   .huddle__footer_newsletter {
     margin-inline-start: 64px;
     margin-block-start: 64px; }
-  .huddle__footer_newsletter_input {
-    width: 85%; }
+  .huddle__footer_newsletter_form {
+    display: flex;
+    flex-direction: column; }
   .huddle__footer_newsletter_button {
-    margin-inline-start: 50%; } }
+    margin-block-start: 16px;
+    margin-inline-start: 0px;
+    width: 150px; } }
+
+@media (min-width: 1000px) {
+  .huddle__footer_newsletter_form {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; }
+  .huddle__footer_newsletter_button {
+    margin-block-start: 0px;
+    margin-inline-start: 0px; } }
