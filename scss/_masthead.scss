@@ -16,3 +16,10 @@
     border-radius: 25px;
     background-color: white;
 }
+
+.huddle__masthead_button:focus,
+.huddle__masthead_button:hover {
+    border: 2px solid hsl(321, 100%, 78%);
+    background-color: white;
+    color: hsl(321, 100%, 78%);
+}

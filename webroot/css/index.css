@@ -47,6 +47,10 @@ img {
 button {
   cursor: pointer; }
 
+button:hover,
+button:focus {
+  background-color: #ff8fd8; }
+
 .huddle__masthead_heading {
   display: flex;
   flex-direction: row;
@@ -63,6 +67,12 @@ button {
   text-transform: capitalize;
   border-radius: 25px;
   background-color: white; }
+
+.huddle__masthead_button:focus,
+.huddle__masthead_button:hover {
+  border: 2px solid #ff8fd8;
+  background-color: white;
+  color: #ff8fd8; }
 
 .huddle__main_heading,
 .huddle__main_details {
@@ -322,9 +332,39 @@ button {
   display: flex;
   flex-direction: row; }
 
-.huddle__footer_list_item:nth-child(2),
-.huddle__footer_list_item:nth-child(3) {
-  margin-inline-start: 32px; }
+.huddle__footer_link--facebook {
+  color: transparent;
+  background-image: url("../icons/icon-facebook copy.svg");
+  background-repeat: no-repeat; }
+
+.huddle__footer_link--facebook:hover,
+.huddle__footer_link--facebook:focus {
+  background-image: url("../icons/icon-facebook-hover.svg");
+  background-repeat: no-repeat; }
+
+.huddle__footer_link--instagramm {
+  color: transparent;
+  background-image: url("../icons/icon-instagram.svg");
+  background-repeat: no-repeat; }
+
+.huddle__footer_link--instagramm:hover,
+.huddle__footer_link--instagramm:focus {
+  background-image: url("../icons/icon-instagram-hover.svg");
+  background-repeat: no-repeat; }
+
+.huddle__footer_link--twitter {
+  color: transparent;
+  background-image: url("../icons/icon-twitter.svg");
+  background-repeat: no-repeat; }
+
+.huddle__footer_link--twitter:focus,
+.huddle__footer_link--twitter:hover {
+  background-image: url("../icons/icon-twitter-hover.svg");
+  background-repeat: no-repeat; }
+
+.huddle__footer_social_media:focus,
+.huddle__footer_social_media:hover {
+  background-color: skyblue; }
 
 @media all and (min-width: 600px) {
   .huddle__footer {
